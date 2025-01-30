@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="./assets/images/me.jpg" alt="Profile Picture" class="profile-img" data-testid="profilePicture">
+        <h2 data-testid="fullName">Obasi Ifeoma Joy</h2>
+        <h4 data-testid="jobTitle">Frontend Developer | Tech Enthusiast</h4>
+        <p class="bio" data-testid="shortBio">
+            Passionate about creating beautiful and interactive web applications.
+            Always learning and improving my frontend development skills. Excited about
+            building user-friendly experiences!
+        </p>
+        <p data-testid="currentLocation">📍 Enugu, Nigeria</p>
+        <p>Email: <a href="mailto:ifeomajoy@example.com" data-testid="emailAddress">ifeomajoy1999@example.com</a></p>
+
+        <!-- Only GitHub and LinkedIn links -->
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/ifeomajoyobasi/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ifeoma-joy-obasi" target="_blank">GitHub</a>
+        </div>
+
+        <p id="utc-time" data-testid="currentTimeUTC">UTC Time: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
