@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="profile-card">
@@ -16,13 +17,18 @@
             Always learning and improving my frontend development skills. Excited about
             building user-friendly experiences!
         </p>
-        <p data-testid="currentLocation">📍 Enugu, Nigeria</p>
-        <p>Email: <a href="mailto:ifeomajoy@example.com" data-testid="emailAddress">ifeomajoy1999@example.com</a></p>
+
+        <p data-testid="currentLocation"><i class="fas fa-map-marker-alt"></i> Enugu, Nigeria</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ifeomajoy@example.com" class="email-link-clr" data-testid="emailAddress">ifeomajoy1999@example.com</a></p>
 
         <!-- Only GitHub and LinkedIn links -->
         <div class="social-links" data-testid="socialLinks">
-            <a href="https://www.linkedin.com/in/ifeomajoyobasi/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/ifeoma-joy-obasi" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ifeomajoyobasi/" target="_blank">
+                <i class="fab fa-linkedin btn-icons"></i> LinkedIn
+            </a>
+            <a href="https://github.com/ifeoma-joy-obasi" target="_blank">
+                <i class="fab fa-github btn-icons"></i> GitHub
+            </a>
         </div>
 
         <p id="utc-time" data-testid="currentTimeUTC">UTC Time: </p>

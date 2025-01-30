@@ -14,19 +14,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f8f8f8; /* Soft off-white background */
+    background: white; /* Clean white background */
 }
 
 /* Profile Card */
 .profile-card {
     background: white;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 350px;
     width: 100%;
-    border: 2px solid #d291bc; /* Dusty Rose border */
+    border: 2px solid #f4a8a1; /* Soft peach border */
 }
 
 /* Profile Image */
@@ -35,19 +35,19 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #d291bc; /* Dusty Rose border */
-    margin-bottom: 10px;
+    border: 3px solid #f4a8a1; /* Soft peach border */
+    margin-bottom: 12px;
 }
 
 /* Name and Job Title */
 h2 {
     font-size: 22px;
-    color: #333; /* Dark Gray for contrast */
+    color: #333;
 }
 
 h4 {
     font-size: 16px;
-    color: #d291bc; /* Dusty Rose */
+    color: #f4a8a1; /* Soft peach */
     margin-bottom: 10px;
 }
 
@@ -55,13 +55,29 @@ h4 {
 .bio {
     font-size: 14px;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 /* Location & Email */
 p {
     font-size: 14px;
     color: #666;
+    margin-bottom: 8px;
+}
+
+.email-link-clr{
+    color: #f4a8a1;
+}
+
+/* Icons Styling */
+i {
+    color: #f4a8a1; /* Soft peach icons */
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.btn-icons{
+   color: white;
 }
 
 /* Social Links */
@@ -72,11 +88,13 @@ p {
 .social-links a {
     text-decoration: none;
     color: white;
-    background: #d291bc; /* Dusty Rose */
-    padding: 10px 15px;
+    background: #f4a8a1; /* Soft peach */
+    padding: 10px 18px;
     margin: 5px;
-    border-radius: 8px;
-    display: inline-block;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     font-size: 14px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -84,9 +102,17 @@ p {
 
 /* Hover Animation */
 .social-links a:hover {
-    background: #b979a5; /* Slightly darker shade for hover */
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    background: #e69590;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* UTC Time */
+#utc-time {
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+    font-weight: bold;
 }
 
 /* Responsive Design */
